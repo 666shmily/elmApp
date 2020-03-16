@@ -1,0 +1,266 @@
+.support-icon {
+	width: 12px;
+	height: 12px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+/*1 和 2 代表白底的图片*/
+.support-icon.icon-1 {
+	width: 12px;
+	height: 12px;
+}
+
+.support-icon.icon-2 {
+	width: 16px;
+	height: 16px;
+}
+/*白字的图片*/
+.support-icon.icon-3 {
+	width: 12px;
+	height: 12px;
+}
+.support-icon.icon-4 {
+	width: 16px;
+	height: 16px;
+}
+.start-48 .star-item {
+	width: 20px;
+	height: 20px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.start-36 .star-item {
+	width: 15px;
+	height: 15px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.start-24 .star-item {
+	width: 10px;
+	height: 10px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+/* 1px边框的设置 */
+.border-bottom-1px {
+	position: relative;
+	
+}
+@media (min-resolution:2dppx){
+	.border-bottom-1px::after {
+		content: '';
+		display: block;
+		width: 100%;
+		border-top: 1px solid rgba(7,17,27,.2);
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		transform: scaleY(0.5);
+	}
+	.header-wrapper .title .brand {
+		background-image: url(../img/img/brand@2x.png); 
+	}
+	.bulletin-wrapper .bulletin {
+		background-image: url(../img/img/bulletin@2x.png);
+	}
+	.start-48 .star-item.on{
+		background-image: url(../img/img/star48_on@2x.png);
+	}
+	.start-48 .star-item.half{
+		background-image: url(../img/img/star48_half@2x.png);
+	}
+	.start-48 .star-item.off{
+		background-image: url(../img/img/star48_off@2x.png);
+	}
+	.start-36 .star-item.on{
+		background-image: url(../img/img/star36_on@2x.png);
+	}
+	.start-36 .star-item.half{
+		background-image: url(../img/img/star36_half@2x.png);
+	}
+	.start-36 .star-item.off{
+		background-image: url(../img/img/star36_off@2x.png);
+	}
+	.start-24 .star-item.on{
+		background-image: url(../img/img/star24_on@2x.png);
+	}
+	.start-24 .star-item.half{
+		background-image: url(../img/img/star24_half@2x.png);
+	}
+	.start-24 .star-item.off{
+		background-image: url(../img/img/star24_off@2x.png);
+	}
+	.support-icon.icon-1.decrease{
+		background-image: url(../img/img/decrease_1@2x.png);
+	}
+	.support-icon.icon-1.discount{
+		background-image: url(../img/img/discount_1@2x.png);
+	}
+	.support-icon.icon-1.guarantee{
+		background-image: url(../img/img/guarantee_1@2x.png);
+	}
+	.support-icon.icon-1.invoice{
+		background-image: url(../img/img/invoice_1@2x.png);
+	}
+	.support-icon.icon-1.special{
+		background-image: url(../img/img/special_1@2x.png);
+	}
+
+	.support-icon.icon-2.decrease{
+		background-image: url(../img/img/decrease_2@2x.png);
+	}
+	.support-icon.icon-2.discount{
+		background-image: url(../img/img/discount_2@2x.png);
+	}
+	.support-icon.icon-2.guarantee{
+		background-image: url(../img/img/guarantee_2@2x.png);
+	}
+	.support-icon.icon-2.invoice{
+		background-image: url(../img/img/invoice_2@2x.png);
+	}
+	.support-icon.icon-2.special{
+		background-image: url(../img/img/special_2@2x.png);
+	}
+
+
+	.support-icon.icon-3.decrease{
+		background-image: url(../img/img/decrease_3@2x.png);
+	}
+	.support-icon.icon-3.discount{
+		background-image: url(../img/img/discount_3@2x.png);
+	}
+	.support-icon.icon-3.guarantee{
+		background-image: url(../img/img/guarantee_3@2x.png);
+	}
+	.support-icon.icon-3.invoice{
+		background-image: url(../img/img/invoice_3@2x.png);
+	}
+	.support-icon.icon-3.special{
+		background-image: url(../img/img/special_3@2x.png);
+	}
+
+	.support-icon.icon-4.decrease{
+		background-image: url(../img/img/decrease_4@2x.png);
+	}
+	.support-icon.icon-4.discount{
+		background-image: url(../img/img/discount_4@2x.png);
+	}
+	.support-icon.icon-4.guarantee{
+		background-image: url(../img/img/guarantee_4@2x.png);
+	}
+	.support-icon.icon-4.invoice{
+		background-image: url(../img/img/invoice_4@2x.png);
+	}
+	.support-icon.icon-4.special{
+		background-image: url(../img/img/special_4@2x.png);
+	}
+} 
+@media (min-resolution:3dppx){
+	.border-bottom-1px::after {
+		content: '';
+		display: block;
+		width: 100%;
+		border-top: 1px solid rgba(7,17,27,.2);
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		transform: scaleY(0.33);
+	}
+	.header-wrapper .title .brand {
+		background-image: url(../img/img/brand@3x.png); 
+	}
+	.bulletin-wrapper .bulletin {
+		background-image: url(../img/img/bulletin@3x.png);
+	}
+	.start-48 .star-item.on{
+		background-image: url(../img/img/star48_on@3x.png);
+	}
+	.start-48 .star-item.half{
+		background-image: url(../img/img/star48_half@3x.png);
+	}
+	.start-48 .star-item.off{
+		background-image: url(../img/img/star48_off@3x.png);
+	}
+	.start-36 .star-item.on{
+		background-image: url(../img/img/star36_on@3x.png);
+	}
+	.start-36 .star-item.half{
+		background-image: url(../img/img/star36_half@3x.png);
+	}
+	.start-36 .star-item.off{
+		background-image: url(../img/img/star36_off@3x.png);
+	}
+	.start-24 .star-item.on{
+		background-image: url(../img/img/star24_on@3x.png);
+	}
+	.start-24 .star-item.half{
+		background-image: url(../img/img/star24_half@3x.png);
+	}
+	.start-24 .star-item.off{
+		background-image: url(../img/img/star24_off@3x.png);
+	}
+	.support-icon.icon-1.decrease{
+		background-image: url(../img/img/decrease_1@3x.png);
+	}
+	.support-icon.icon-1.discount{
+		background-image: url(../img/img/discount_1@3x.png);
+	}
+	.support-icon.icon-1.guarantee{
+		background-image: url(../img/img/guarantee_1@3x.png);
+	}
+	.support-icon.icon-1.invoice{
+		background-image: url(../img/img/invoice_1@3x.png);
+	}
+	.support-icon.icon-1.special{
+		background-image: url(../img/img/special_1@3x.png);
+	}
+
+	.support-icon.icon-2.decrease{
+		background-image: url(../img/img/decrease_2@3x.png);
+	}
+	.support-icon.icon-2.discount{
+		background-image: url(../img/img/discount_2@3x.png);
+	}
+	.support-icon.icon-2.guarantee{
+		background-image: url(../img/img/guarantee_2@3x.png);
+	}
+	.support-icon.icon-2.invoice{
+		background-image: url(../img/img/invoice_2@3x.png);
+	}
+	.support-icon.icon-2.special{
+		background-image: url(../img/img/special_2@3x.png);
+	}
+
+
+	.support-icon.icon-3.decrease{
+		background-image: url(../img/img/decrease_3@3x.png);
+	}
+	.support-icon.icon-3.discount{
+		background-image: url(../img/img/discount_3@3x.png);
+	}
+	.support-icon.icon-3.guarantee{
+		background-image: url(../img/img/guarantee_3@3x.png);
+	}
+	.support-icon.icon-3.invoice{
+		background-image: url(../img/img/invoice_3@3x.png);
+	}
+	.support-icon.icon-3.special{
+		background-image: url(../img/img/special_3@3x.png);
+	}
+
+	.support-icon.icon-4.decrease{
+		background-image: url(../img/img/decrease_4@3x.png);
+	}
+	.support-icon.icon-4.discount{
+		background-image: url(../img/img/discount_4@3x.png);
+	}
+	.support-icon.icon-4.guarantee{
+		background-image: url(../img/img/guarantee_4@3x.png);
+	}
+	.support-icon.icon-4.invoice{
+		background-image: url(../img/img/invoice_4@3x.png);
+	}
+	.support-icon.icon-4.special{
+		background-image: url(../img/img/special_4@3x.png);
+	}
+} 

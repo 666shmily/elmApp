@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>detail.html</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/icon.css">
+		<link rel="stylesheet" href="css/detail.css">
+		<link rel="stylesheet" href="css/utils.css">
+
+	</head>
+
+	<body>
+		<div class="detail">
+			<div class="message">
+				
+			</div>
+			<!--<div class='imgSrc'>
+				<img src="http://static.galileo.xiaojukeji.com/static/tms/seller_avatar_256px.jpg" alt="">
+			</div>
+			<div class="info">
+				<h1 class='title'>皮蛋瘦肉粥</h1>
+				<p class='detail-des'>
+					<span>月销1132份</span>
+					<span style='margin-left:12px;'>好评率100%</span>
+				</p>
+				<div class="ifpay">
+					<p class='detail-price'>
+						<span class='newPrice'>￥24</span>
+						<span class='oldPrice'>￥28</span>
+					</p>
+					<div>
+						<button class='pay-btn'>加入购物车</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="split"></div>
+			<div class="goods-detail">
+				<h1 class='goods-des'>商品介绍</h1>
+				<div class="goods-info">
+					一碗皮蛋瘦肉粥，总是我到粥店时的不二之选。香浓软滑，饱腹暖心，皮蛋的Q弹与瘦肉的滑嫩伴着粥香溢于满口，让人喝这样的一碗粥也觉得心满意足
+				</div>
+			</div>
+			
+			<div class="split"></div>-->
+
+			<!--<div class="goods-rating">
+				<h1>商品评价</h1>
+				<div class="filter-type border-bottom-1px">
+					<div class="all">全部<span>57</span></div>
+					<div class="recommend">推荐<span>47</span></div>
+					<div class="bad">吐槽<span>10</span></div>
+				</div>
+				<div class="if-content border-bottom-1px">
+					<input type="radio">
+					<span>只看有内容的评价</span>
+				</div>
+				<ul class="rating-list">
+					<li class="rating-item">
+						<div class="rating-info">
+							<div class="rating-time">2016-07-07 12:34</div>
+							<div class="rating-who">
+								<span>3*******2</span>
+								<img src="http://static.galileo.xiaojukeji.com/static/tms/default_header.png" alt="">
+							</div>
+						</div>
+						<div class="rating-content">
+							<span class='icon-thumb_up'></span>
+							<span class='rating-word'>太少了，不够一个人吃</span>
+						</div>
+					</li>
+				</ul>
+			</div>-->
+			<div class="goods-rating">
+				<h1>商品评价</h1>
+				<div class="filter-type border-bottom-1px">
+					<div class="all">全部<span class="all">57</span></div>
+					<div class="recommend">推荐<span>47</span></div>
+					<div class="bad">吐槽<span>10</span></div>
+				</div>
+				<div class="if-content border-bottom-1px">
+					<input type="radio">
+					<span>只看有内容的评价</span>
+				</div>
+				<ul class="rating-list">
+					
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/utils.js"></script>
+	<script>
+		let id = location.search.split('=')[1]
+		$.ajax({
+			type: "get",
+			url: "js/data.json",
+			success: (res) => {
+				let goods = res.goods
+				$.each(goods, function(index, item) {
+					$.each(item.foods, function(subIndex, subItem) {
+						if(id == subItem.id) {
+//							$(".message").html('')	
+							
+							$(`
+				
+			<div class='imgSrc'>
+				<img src="${subItem.image}" alt="">
+			</div>
+			<div class="info">
+				<h1 class='title'>${subItem.name}</h1>
+				<p class='detail-des'>
+					<span>月销${subItem.sellCount}份</span>
+					<span style='margin-left:12px;'>好评率${subItem.rating}%</span>
+				</p>
+				<div class="ifpay">
+					<p class='detail-price'>
+						<span class='newPrice'>￥${subItem.price}</span>
+						<span class='oldPrice' style='display:${subItem.oldPrice ? "block" : "none"}'>￥28</span>
+					</p>
+					<div>
+						<button class='pay-btn'>加入购物车</button>
+					</div>
+				</div>
+			</div>
+						<div class="goods-detail" style='display:${ subItem.info ? "block" : "none"}'>
+				<h1 class='goods-des'>商品介绍</h1>
+				<div class="goods-info"  >
+					${subItem.info}
+				</div>
+			</div>`).appendTo('.message')
+							$.each(subItem.ratings, function(xsindex,xsitem) {
+								$(`<li class="rating-item">
+												<div class="rating-info">
+													<div class="rating-time">${changeNow(xsitem.rateTime)}</div>
+													<div class="rating-who">
+														<span>${xsitem.username}</span>
+														<img src="${xsitem.avatar}" alt="">
+													</div>
+												</div>
+												<div class="rating-content">
+													<span class='icon-thumb_up'></span>
+													<span class='rating-word'>${xsitem.text}</span>
+												</div>
+											</li>`).appendTo('.rating-list')
+							});
+						
+						}
+					})
+				});
+			}
+		});
+	</script>
+
+</html>
+
